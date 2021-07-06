@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #0a2a43;
+}
+section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+section i {
+    position: absolute;
+    background: white;
+    border-radius: 3px;
+    animation: animateSnowFlakes 5s ease-in-out infinite;
+}
+#cloud1 {
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    left: 20px;
+}
+#cloud2 {
+    position: absolute;
+    top: -200px;
+}
+.sun {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 200px;
+    left: 10px;
+    background: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 70px 10px rgb(196, 91, 21), 0 0 170px 130px rgba(167, 107, 18, 0.549),inset 0 0 90px 5px rgb(211, 56, 82);
+}
+@keyframes animateSnowFlakes {
+    from{
+        
+        transform: rotate(0deg);
+    }
+    to {
+        top: 100%;
+        transform: rotate(-360deg);
+    }
+}
